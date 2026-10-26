@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>商品图片预览</title>
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <div class="brand__text">
+            <h1 class="brand__title">商品图片</h1>
+            <p class="brand__sub" id="pageMeta">加载中…</p>
+          </div>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn btn--ghost" id="btnSelectAll">全选</button>
+          <button type="button" class="btn btn--ghost" id="btnSelectNone">取消全选</button>
+          <button type="button" class="btn btn--primary" id="btnDownload" disabled>
+            下载选中 <span class="btn__count" id="selectedCount">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="status" id="status" hidden></div>
+        <div class="grid" id="grid" role="list"></div>
+        <div class="empty" id="empty" hidden>
+          <p>暂无图片数据</p>
+          <p class="empty__hint">请回到商品详情页点击「获取图片」</p>
+        </div>
+      </main>
+
+      <div class="progress" id="progress" hidden>
+        <div class="progress__card">
+          <p class="progress__title" id="progressTitle">正在下载…</p>
+          <div class="progress__track">
+            <div class="progress__bar" id="progressBar"></div>
+          </div>
+          <p class="progress__desc" id="progressDesc">0 / 0</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="gallery.js"></script>
+  </body>
+</html>

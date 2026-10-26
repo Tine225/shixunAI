@@ -1,0 +1,101 @@
+#ecom-img-extractor-btn.ecom-img-extractor-fab {
+  all: initial;
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 28px !important;
+  z-index: 2147483646 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 18px !important;
+  border: none !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, #1a7f6e 0%, #0d5c4f 100%) !important;
+  color: #fff !important;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  box-shadow:
+    0 4px 14px rgba(13, 92, 79, 0.35),
+    0 1px 3px rgba(0, 0, 0, 0.12) !important;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    opacity 0.18s ease !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+#ecom-img-extractor-btn.ecom-img-extractor-fab:hover {
+  transform: translateY(-2px) !important;
+  box-shadow:
+    0 8px 22px rgba(13, 92, 79, 0.4),
+    0 2px 6px rgba(0, 0, 0, 0.14) !important;
+}
+
+#ecom-img-extractor-btn.ecom-img-extractor-fab:active {
+  transform: translateY(0) !important;
+}
+
+#ecom-img-extractor-btn.ecom-img-extractor-fab:disabled,
+#ecom-img-extractor-btn.ecom-img-extractor-fab.is-loading {
+  opacity: 0.78 !important;
+  cursor: wait !important;
+  transform: none !important;
+}
+
+#ecom-img-extractor-btn .ecom-img-extractor-fab__icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #fff !important;
+}
+
+#ecom-img-extractor-btn .ecom-img-extractor-fab__text {
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+#ecom-img-extractor-toast.ecom-img-extractor-toast {
+  all: initial;
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 88px !important;
+  z-index: 2147483647 !important;
+  max-width: 280px !important;
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  background: #1c2b28 !important;
+  color: #f4f7f6 !important;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+  opacity: 0 !important;
+  transform: translateY(8px) !important;
+  pointer-events: none !important;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+#ecom-img-extractor-toast.ecom-img-extractor-toast.is-show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+#ecom-img-extractor-toast.ecom-img-extractor-toast--success {
+  background: #0d5c4f !important;
+}
+
+#ecom-img-extractor-toast.ecom-img-extractor-toast--warn {
+  background: #8a5a12 !important;
+}
+
+#ecom-img-extractor-toast.ecom-img-extractor-toast--error {
+  background: #8b2e2e !important;
+}
